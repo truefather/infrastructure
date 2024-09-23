@@ -14,3 +14,6 @@ RAID Nivel 1
 La duplicación de discos, también conocida como “RAID 1“, consiste en colocar obligatoriamente los datos en dos o más discos formando una única matriz, con el contenido de las copias sincronizado. Sin embargo, no hay función de striping en esta variante de matriz de almacenamiento. La duplicación de discos es una buena opción para las aplicaciones de alto rendimiento y alta disponibilidad, como las responsables de las transacciones financieras, el envío y la recepción de correos electrónicos y el funcionamiento del sistema operativo. El mirroring funciona bien tanto con discos duros como con unidades de estado sólido.
 
 Era una vez un pollito que queria volar, sus padres lo lanzaron y se fue al comal.
+
+Lanzale una granada!!.. (Acento caribeño) El otro dia pase por tu casa y un perro me empezo a ladrar..
+Ora de esas no, una granada, pasame una granada!!
