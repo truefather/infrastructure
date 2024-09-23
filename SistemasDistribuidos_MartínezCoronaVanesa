@@ -10,7 +10,8 @@ Se considera que tienen una capacidad de almacenamiento y procesamiento práctic
 -Escalado horizontal: en este caso, se incorporan más servidores (agrupados en clusters) para que trabajen de manera conjunta, funcionando como una única máquina.
 
 ° Ventajas de una arquitectura distribuida:
-Mayor eficiencia: Los sistemas distribuidos permiten resolver tareas complejas de manera más eficiente y a menor costo al aprovechar múltiples nodos, lo que optimiza el rendimiento.
+Mayor eficiencia: Los sistemas distribuidos permiten resolver tareas complejas de manera más eficiente y a menor costo al aprovechar múltiples nodos,
+lo que optimiza el rendimiento.
 Mayor tolerancia a fallos: Si un nodo falla, otros mantienen la información, asegurando que los procesos continúen sin interrupciones.
 Mayor velocidad: Al dividir tareas entre varios nodos, el procesamiento se acelera, proporcionando respuestas más rápidas.
 Escalabilidad: Se puede aumentar la capacidad del sistema añadiendo nuevos nodos en lugar de mejorar equipos individuales.
@@ -18,9 +19,11 @@ Escalabilidad: Se puede aumentar la capacidad del sistema añadiendo nuevos nodo
 ° Desventajas de una arquitectura distribuida:
 -Mayor complejidad: Es más difícil diseñar, configurar y gestionar en comparación con sistemas centralizados.
 -Problemas de seguridad: Con más nodos y usuarios accediendo al sistema, se incrementan los riesgos para la seguridad de los datos y las comunicaciones.
--Esfuerzo adicional: Administrar un sistema distribuido requiere mayor esfuerzo, ya que puede involucrar equipos con diferentes sistemas operativos, lo que aumenta la complejidad.
--RAID (Redundant Array of Independent Disks) : es una matriz de al menos dos unidades de almacenamiento distintas convertidas en una única unidad lógica grande, el
-principio base de un sistema RAID es almacenar datos de manera redundante, lo que garantiza que la integridad y funcionalidad de la matriz completa no queden comprometidas por un fallo en un disco duro.
+-Esfuerzo adicional: Administrar un sistema distribuido requiere mayor esfuerzo, ya que puede involucrar equipos con diferentes sistemas operativos, 
+lo que aumenta la complejidad.
+-RAID (Redundant Array of Independent Disks) : es una matriz de al menos dos unidades de almacenamiento distintas convertidas en una única unidad lógica grande,
+elprincipio base de un sistema RAID es almacenar datos de manera redundante, lo que garantiza que la integridad y funcionalidad de la matriz completa no queden 
+comprometidas por un fallo en un disco duro.
 
 ° El papel de los sistemas RAID en los entornos de servidores de la actualidad
 En las estructuras de servidores, los RAID están pensados para que el fallo de un solo disco duro no tenga consecuencias, ya que 
@@ -29,10 +32,11 @@ es el aumento de la capacidad de almacenamiento y una mayor velocidad de lectura
 
 Tipos RAID
 -RAID 0 – striping: esta configuración tiene división, pero no redundancia de datos. Ofrece el mejor rendimiento, pero sin tolerancia a fallos.
--RAID 1 – mirroring: El RAID de nivel 1 se conoce como “espejo”. En esta matriz, todos los discos duros integrados presentan el mismo estado de datos en todo momento, por lo que
-ofrece una redundancia completa y puede suplir fácilmente el fallo de las unidades de almacenamiento individuales. 
--RAID 5 – striping with parity: este nivel se basa en la segmentación a nivel de bloque con paridad. La información de paridad se divide en cada unidad, lo que permite
-que la matriz funcione incluso si falla una unidad.
+-RAID 1 – mirroring: El RAID de nivel 1 se conoce como “espejo”. En esta matriz, todos los discos duros integrados presentan el mismo estado de datos en todo 
+momento, por lo queofrece una redundancia completa y puede suplir fácilmente el fallo de las unidades de almacenamiento individuales. 
+-RAID 5 – striping with parity: este nivel se basa en la segmentación a nivel de bloque con paridad. La información de paridad se divide en cada unidad, lo que 
+permiteque la matriz funcione incluso si falla una unidad.
+
 -RAID 6 – striping with double parity: tiene un enfoque similar al del RAID 5, con él también se distribuyen los datos en bloques uniformemente por los componentes de almacenamiento 
 integrados, mediante la información de paridad, aumenta la seguridad. 
 -RAID 10 – combining mirroring and striping: Combinando RAID 1 y RAID 0, este nivel a menudo se denomina RAID 10, que ofrece un mayor rendimiento que RAID 1, pero por un coste mayor. 
