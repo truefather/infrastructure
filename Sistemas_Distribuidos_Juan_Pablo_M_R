@@ -94,3 +94,8 @@ RAID 10 (RAID 1+0 o RAID 0+1)
     striping).
 •	Desventajas: Requiere al menos 4 discos y es costoso en términos de almacenamiento, 
     ya que la mitad del espacio se utiliza para la duplicación de datos.
+
+los arreglos raid para la protección de los datos, como para recuperar datos que se han perdido.
+Cada vez que se escriben datos en los discos, 
+se debe calcular el valor de la paridad para que la organización 
+RAID sea capaz de recuperar los datos en caso de fallo de uno de los discos.
