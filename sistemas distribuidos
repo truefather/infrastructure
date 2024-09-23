@@ -1,0 +1,83 @@
+Sistemas Distribuidos
+Son sistemas cuyos componentes hardware y software, que están en ordenadores conectados en red, se comunican y coordinan sus acciones mediante el paso de mensajes, 
+para el logro de un objetivo. Se establece la comunicación mediante un protocolo prefijado por un esquema "cliente-servidor".
+
+Arquitecturas Sistemas Distribuidos
+1.	Cliente-Servidor: Una arquitectura clásica donde los clientes solicitan servicios o recursos a los servidores centralizados.
+	Ventajas: Facilidad de administración y centralización.
+	Desventajas: El servidor puede ser un punto único de fallo y puede sobrecargarse.
+2.	Peer-to-Peer (P2P): Los nodos actúan como clientes y servidores simultáneamente. Cada nodo es autónomo y colabora con otros para compartir recursos.
+	Ventajas: Escalabilidad y descentralización, sin un único punto de fallo.
+	Desventajas: Difícil de gestionar y asegurar; no hay control centralizado.
+3.	Arquitectura de Microservicios: Se descompone una aplicación en pequeños servicios independientes, cada uno ejecutándose en diferentes nodos.
+	Ventajas: Escalabilidad, mantenimiento y despliegue más simples.
+	Desventajas: Mayor complejidad en la gestión de comunicaciones entre servicios.
+4.	Grid Computing: Diversos recursos distribuidos colaboran para resolver grandes problemas computacionales.
+	Ventajas: Gran capacidad de procesamiento.
+	Desventajas: Requiere software especializado para coordinar los recursos
+5.	Cloud Computing: Provisión de servicios como almacenamiento y computación a través de internet, en infraestructuras distribuidas.
+	Ventajas: Flexibilidad, escalabilidad y pago por uso.
+	Desventajas: Dependencia del proveedor y posible falta de control sobre los datos.
+
+Ventajas de los Sistemas Distribuidos
+1.	Escalabilidad: Permiten añadir más nodos al sistema para aumentar su capacidad de procesamiento o almacenamiento.
+2.	Tolerancia a fallos: Si un nodo falla, otros pueden continuar el procesamiento, garantizando disponibilidad.
+3.	Rendimiento: Permiten realizar tareas concurrentemente, distribuyendo la carga de trabajo.
+4.	Flexibilidad: Permiten integrar diferentes tipos de hardware y software, así como ubicaciones geográficas.
+5.	Coste eficiente: En lugar de usar una máquina costosa y centralizada, se pueden usar varios equipos más baratos.
+
+Desventajas de los Sistemas Distribuidos
+1.	Complejidad: La coordinación y gestión de múltiples nodos requiere software especializado y una administración más compleja.
+2.	Problemas de sincronización: Mantener la coherencia de datos entre nodos puede ser complicado, especialmente si están distribuidos geográficamente.
+3.	Seguridad: La distribución de datos y procesos entre múltiples nodos aumenta la superficie de ataque, lo que complica la seguridad.
+4.	Latencia y ancho de banda: La comunicación entre nodos puede introducir latencias, especialmente si están en ubicaciones distantes.
+5.	Fallas parciales: Un fallo en una parte del sistema puede afectar otras partes, aunque no de forma catastrófica.
+
+Arquitecturas RAID
+RAID (Redundant Array of Independent Disks) es una tecnología que combina múltiples discos duros en una sola unidad lógica para mejorar la redundancia, 
+el rendimiento o ambas cosas. RAID ofrece diferentes configuraciones, llamadas niveles, que distribuyen datos entre varios discos con distintos enfoques 
+para balancear la velocidad, la capacidad de almacenamiento y la tolerancia a fallos.
+
+Principales Arquitecturas
+RAID 0 (Striping)
+	Descripción: Los datos se dividen en bloques y se distribuyen (striped) entre dos o más discos sin redundancia.
+	Ventajas: Mejora significativa en el rendimiento de lectura y escritura, ya que los datos se acceden de forma simultánea desde varios discos.
+	Desventajas: No ofrece redundancia. Si un disco falla, se pierden todos los datos.
+
+RAID 1 (Mirroring)
+	Descripción: Los datos se duplican en dos o más discos. Cada disco es una copia exacta (espejo) del otro.
+	Ventajas: Alta tolerancia a fallos, ya que los datos están duplicados. Si un disco falla, los datos aún están disponibles en el disco espejo.
+	Desventajas: No mejora el rendimiento (salvo en la lectura, que puede ser más rápida). El coste de almacenamiento es alto, ya que se duplica la cantidad de discos.
+
+RAID 5 (Striping con Paridad Distribuida)
+	Descripción: Los datos y la información de paridad (que permite la recuperación de datos en caso de fallo de un disco) se distribuyen entre tres o más discos.
+	Ventajas: Buena combinación de rendimiento, capacidad y tolerancia a fallos. Se puede recuperar la información si un disco falla.
+	Desventajas: La escritura de datos puede ser más lenta debido a la necesidad de calcular la paridad. Si fallan dos discos, los datos se pierden.
+
+RAID 6 (Striping con Doble Paridad)
+	Descripción: Similar a RAID 5, pero con paridad doble, lo que permite tolerar el fallo de dos discos.
+	Ventajas: Mayor tolerancia a fallos que RAID 5. Puede continuar funcionando incluso si fallan dos discos.
+	Desventajas: Rendimiento de escritura más lento que RAID 5 debido a los cálculos adicionales de paridad.
+
+RAID 10 (1+0, Mirroring + Striping)
+	Descripción: Combina RAID 1 y RAID 0. Los datos se distribuyen entre los discos (striping), y cada bloque de datos se replica en otro disco (mirroring).
+	Ventajas: Ofrece tanto alta tolerancia a fallos como mejora en el rendimiento.
+	Desventajas: Alto coste en términos de capacidad de almacenamiento, ya que se requiere el doble de discos.
+
+RAID 50 (RAID 5 + RAID 0)
+	Descripción: Combina varios conjuntos de RAID 5 distribuidos (striping). RAID 0 mejora el rendimiento y RAID 5 proporciona redundancia.
+	Ventajas: Alta capacidad, buen rendimiento y tolerancia a fallos.
+	Desventajas: Alto coste y mayor complejidad en la implementación.
+
+RAID en servidores de sistemas distribuidos
+Al combinar RAID con servidores en un sistema distribuido, se pueden lograr varios beneficios:
+	Tolerancia a fallos: En sistemas distribuidos, los datos suelen estar replicados entre nodos, pero agregar RAID en cada servidor puede aumentar la redundancia de datos. 
+RAID 1, RAID 5 o RAID 6 aseguran que si un disco en un servidor falla, los datos se pueden recuperar.
+	Rendimiento: Niveles como RAID 0 o RAID 10 proporcionan mejoras en el rendimiento de lectura y escritura, lo que es crítico para sistemas distribuidos que manejan 
+grandes volúmenes de datos o requieren acceso rápido.
+	Seguridad y disponibilidad: RAID mejora la disponibilidad al garantizar que los servidores que forman parte de un sistema distribuido puedan continuar operando, 
+incluso si algunos discos fallan. En combinación con otros mecanismos de replicación o backup en sistemas distribuidos, se mejora la continuidad del servicio.
+
+
+
+
