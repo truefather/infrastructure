@@ -1,4 +1,6 @@
 ESTE NO
+Por que este no?
+ya tenemos ambre, chan chan chan chan leche con pan
 
 Los sistemas distribuidos son un conjunto de computadoras o servidores que trabajan de forma coordinada como si fueran una sola, utilizan recursos para lograr un objetivo compartido común. La finalidad de los sistemas distribuidos es eliminar los cuellos de botella o los puntos de error centrales de un sistema.
 Arquitecturas 
