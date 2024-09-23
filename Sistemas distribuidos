@@ -1,0 +1,65 @@
+Los sistemas distribuidos son un conjunto de computadoras o servidores que trabajan de forma coordinada como si fueran una sola. Podríamos pensarlos como si fueran una orquesta en la cual hay diferentes instrumentos que suenan de forma armónica como un todo.
+
+Arquitectura
+
+Ventajas
+
+ 
+
+•Una de las ventajas de los sistemas distribuidos es la economía, pues es mucho más barato, añadir servidores y clientes cuando se requiere aumentar la potencia de procesamiento.
+
+•El trabajo en conjunto. Por ejemplo: en una fábrica de ensamblado, los robots tienen sus CPUs diferentes y realizan acciones en conjunto, dirigidos por un sistema distribuido.
+
+•Tienen una mayor confiabilidad. Al estar distribuida la carga de trabajo en muchas máquinas la falla de una de ellas no afecta a las demás, el sistema sobrevive como un todo.
+
+•          Capacidad de crecimiento incrementa. Se puede añadir procesadores al sistema, incrementando su potencia en forma gradual según sus necesidades.
+
+Con respecto a PCs Independientes.
+
+•          Se pueden compartir recursos, como programas y periféricos, muy costosos. Ejemplo: Impresora Láser, dispositivos de almacenamiento masivo, etc.
+
+Al compartir recursos, satisfacen las necesidades de muchos usuarios a la vez. Ejemplo: Sistemas de reservas de aerolíneas.
+
+•          Se logra una mejor comunicación entre las personas. Ejemplo: el correo electrónico.
+
+•          Tienen mayor flexibilidad, la carga de trabajo se puede distribuir entre diferentes ordenadores.
+
+Desventajas
+
+El principal problema es el software, es el diseño, implantación y uso del software distribuido, pues presenta numerosos inconvenientes. Los principales interrogantes son los siguientes:
+Las computadoras en un sistema pueden ser de diferentes tipos y ejecutar versiones diferentes de sistemas operativos. Esto significa que se requiere mas esfuerzo para gestionar y mantener en funcionamiento el sistema.
+Puede accederse al sistema desde varias computadoras diferentes, y el trafico en la red, puede estar sujeto a escuchas indeseadas (esto hace mas difícil mantener la integridad de los datos en el sistema y que los servicios no se degraden por ataques).
+ Los sistemas distribuidos son mas complejos, esto provoca que sea mas difícil comprender sus propiedades.
+los sistemas distribuidos tienen un sistema impredecible. Como todos ellos pueden cambiar rápidamente, el tiempo requerido para responder a una petición de usuario puede variar dramáticamente, de una petición a otra.
+En general se considera que las ventajas superan a las desventajas, si estas últimas se administran seriamente.
+Arreglos raid
+
+Raid es una tipología de configuración de múltiples discos duros que pueden trabajar de forma coordinada. El término RAID proviene del acrónimo inglés de: Redundant Array of Independent Disks.
+
+ 
+
+Dentro de RAID se encuentran 2 grupos:
+
+ 
+
+Espejo de discos (disk mirroring): Sistemas RAID que buscan la redundancia ante un posible fallo de uno de los discos duros.
+
+ 
+
+Stripping de discos (disk striping): Sistema RAID que no busca la redundancia, sino una alta velocidad de transferencia de datos.
+
+ 
+
+RAID 0
+
+ 
+
+(striping de disco): Este nivel implica el proceso de dividir una matriz de datos en bloques individuales y luego distribuirlos a través de múltiples dispositivos de almacenamiento, como unidades de disco duro (“HDD”) o unidades de estado sólido (“SSD”), combinados en un grupo agregado. Los bloques se asignan secuencialmente y contienen cada parte de los datos en una unidad independiente.
+
+ 
+
+RAID Nivel 1
+
+ 
+
+La duplicación de discos, también conocida como “RAID 1“, consiste en colocar obligatoriamente los datos en dos o más discos formando una única matriz, con el contenido de las copias sincronizado. Sin embargo, no hay función de striping en esta variante de matriz de almacenamiento. La duplicación de discos es una buena opción para las aplicaciones de alto rendimiento y alta disponibilidad, como las responsables de las transacciones financieras, el envío y la recepción de correos electrónicos y el funcionamiento del sistema operativo. El mirroring funciona bien tanto con discos duros como con unidades de estado sólid
