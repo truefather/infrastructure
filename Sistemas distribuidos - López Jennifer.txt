@@ -61,7 +61,7 @@ Los arreglos RAID están muy presentes en los sistemas distribuidos ya que estos
 algunos para respaldos, a replicar, guardar más rápido, todo esto dependiendo para que los vayamos a utilizar, se puede elegir uno que se adecue a las necesidades 
 de cada quien.
 
-
+Información clara
 
 Referencias
 
