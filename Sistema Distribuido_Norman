@@ -1,0 +1,9 @@
+Un sistema distribuido es un grupo de computadoras o dispositivos unidos por una red que colaboran entre sí para lograr un mismo objetivo. 
+Unas Arquitecturas de sistemas distribuidos pueden ser... Cliente-Servidor: Un sistema donde uno o más clientes solicitan servicios o recursos de uno o más servidores. 
+Los servidores proporcionan los recursos, y los clientes consumen estos servicios O tambien el P2P (Peer-to-Peer) En este todos los nodos pueden actuar como clientes y servidores, 
+intercambiando directamente datos entre ellos sin depender de un servidor central.
+Algunas Ventajas de los sistemas distribuidos pueden ser... Escalabilidad:Los sistemas pueden aumentar su capacidad agregando más nodos sin necesidad de modificar la estructura existente
+y la Tolerancia a fallos: Si un nodo falla, el sistema puede continuar funcionando usando otros nodos, lo que mejora la disponibilidad y la confiabilidad.
+Y algunas Desventajas de los sistemas distribuidos pueden ser... Seguridad: Al distribuir datos y procesos en múltiples nodos, aumentan los puntos vulnerables que pueden ser atacados 
+o comprometidos, lo que requiere una mayor atención a la seguridad. El Manejo de fallos: Aunque son tolerantes a fallos, la identificación y recuperación ante fallos 
+pueden ser complejas y pueden requerir mecanismos especializados, como algoritmos de consenso o replicación.
