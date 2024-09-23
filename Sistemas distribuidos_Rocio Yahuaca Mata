@@ -1,0 +1,97 @@
+Sistemas distribuidos:
+Un sistema distribuido es un conjunto de programas informáticos que utilizan recursos computacionales en varios nodos de
+cálculo distintos para lograr un objetivo compartido común. Este tipo de sistemas, también denominados "computación distribuida" o "bases de datos distribuidas", 
+usan nodos distintos para comunicarse y sincronizarse a través de una red común. Requieren componentes concurrentes, una red de comunicación y
+un mecanismo de sincronización. Permiten compartir recursos, incluyendo el software, por los sistemas conectados a una red.
+Por tanto, el sistema se basa en una red que conecta las computadoras y maneja el enrutamiento de los mensajes.
+
+ Arquitectura:
+Arquitectura cliente-servidor:
+Una computadora en particular llamada servidor puede realizar ciertas tareas, que se denominan servicios.
+Por ejemplo, ofrecer archivos a través de la red, capacidad de ejecutar ciertos comandos o enrutar datos a una impresora.
+El cliente es la computadora que solicita los servicios.
+La computadora conocida principalmente por el servicio que brinda puede denominarse servidor de impresión, servidor de archivos, etc.
+
+Arquitectura de igual a igual (peer-to-peer):
+Asume que cada computadora tiene capacidades similares y que ninguna máquina está dedicada a servir a las demás.
+Un ejemplo de esto es un conjunto de microcomputadoras en una pequeña oficina.
+La red permite a las personas acceder a los archivos de los demás y enviar correos electrónicos,
+pero ninguna computadora brinda un conjunto específico de servicios.
+
+Arquitecturas de varios niveles:
+Para ciertos servicios puede tener sentido tener una conectividad jerárquica.
+Por ejemplo:
+Un servidor al realizar sus tareas puede contactar a otro servidor de diferente tipo
+La arquitectura cliente-servidor es una arquitectura de dos niveles.
+
+Arquitectura de grupo de procesadores:
+Un sistema operativo podría iniciar automáticamente procesos en computadoras inactivas e incluso migrar 
+procesos a sistemas con una mayor cantidad de ciclos disponibles de CPU.
+En otros casos, un usuario puede iniciar o mover procesos manualmente en los sistemas disponibles.
+
+Ventajas:
+Una de las ventajas de los sistemas distribuidos es la economía, pues es mucho más barato, 
+añadir servidores y clientes cuando se requiere aumentar la potencia de procesamiento.
+El trabajo en conjunto. Por ejemplo: en una fábrica de ensamblado, los robots tienen sus CPUs diferentes 
+y realizan acciones en conjunto, dirigidos por un sistema distribuido.
+Tienen una mayor confiabilidad. Al estar distribuida la carga de trabajo en muchas 
+máquinas la falla de una de ellas no afecta a las demás, el sistema sobrevive como un todo.
+
+Desventajas:
+El principal problema es el software, es el diseño, implantación y uso del software distribuido, pues presenta numerosos inconvenientes.
+Los principales interrogantes son los siguientes:
+Las computadoras en un sistema pueden ser de diferentes tipos y ejecutar versiones diferentes de sistemas operativos. 
+Esto significa que se requiere mas esfuerzo para gestionar y mantener en funcionamiento el sistema.
+﻿Puede accederse al sistema desde varias computadoras diferentes, y el trafico en la red, puede estar sujeto a escuchas indeseadas 
+(esto hace mas difícil mantener la integridad de los datos en el sistema y que los servicios no se degraden por ataques).
+
+RAID:
+Un Sistema RAID, o Matriz Redundante de Discos Independientes, es un método de almacenamiento de datos que distribuye
+la información entre varios discos duros para mejorar la redundancia de datos, la seguridad, el rendimiento del sistema y la velocidad de lectura y escritura.
+
+Arquitectura:
+RAID 0:
+Se utiliza mejor para el almacenamiento en el que la protección contra la pérdida de datos no es una preocupación,
+pero se requiere un soporte de lectura/escritura de alta velocidad.
+
+RAID 1:
+La duplicación de discos es particularmente útil para los escenarios de recuperación de desastres,
+ya que proporciona una recuperación instantánea de los datos necesarios, para las aplicaciones de misión crítica,
+inmediatamente después de un fallo del disco.
+
+RAID2 :
+Esta configuración de almacenamiento de datos utiliza la separación de discos,
+además de que se asignan algunos discos individuales que almacenan información de comprobación y corrección de errores (“ECC“).
+Este código de corrección de errores permite analizar los datos leídos o transmitidos y, si es necesario, corregirlos directamente durante el proceso de transferencia.
+
+RAID 3:
+Este formato de organización de matrices de discos unificadas utiliza el striping y asigna un disco,
+del conjunto de unidades disponibles, para almacenar la información de paridad,
+que se encarga de comprobar la integridad determinando si los datos se han perdido o sobrescrito cuando se trasladan directamente de una ubicación
+de almacenamiento a otra o cuando se transfieren entre ordenadores. La información “ECC” incrustada se utiliza para detectar errores y la recuperación de datos
+se realiza calculando la información exclusiva registrada en otros discos.
+
+RAID 4:
+Esta configuración RAID utiliza una unidad de paridad dedicada y un striping a nivel de bloque entre varias unidades,
+lo que permite a los usuarios realizar operaciones de lectura y escritura desde cualquier unidad. 
+Sin embargo, como todas las escrituras deben ir a una unidad de paridad dedicada, el rendimiento de este proceso se reduce considerablemente. 
+El RAID 4, así como el RAID 3 y el RAID 2 introducidos anteriormente, no se utilizan habitualmente en los sistemas modernos.
+
+RAID 5:
+La configuración de la matriz redundante de discos independientes en este formato se basa en el principio de striping a nivel de bloques de paridad.
+Los datos y la información de paridad se distribuyen uniformemente entre todas las unidades,
+lo que supone reducir la vulnerabilidad crítica de una unidad de almacenamiento individual en una unión organizada
+y permite que una matriz RAID 5 funcione incluso en caso de fallo de una sola unidad, e incluso que se recuperen mediante la intercalación
+de datos perdidos del dispositivo problemático. En el “RAID 5” la información de paridad se almacena en diagonal en todos los discos de la matriz.
+Si una unidad falla, los datos brutos se calculan basándose en la información de paridad que queda en los restantes dispositivos de almacenamiento válidos del conjunto.
+Las matrices RAID 5 se consideran generalmente una mala opción para su uso en sistemas de escritura intensiva debido al impacto en el rendimiento
+asociado a la escritura de datos de paridad. Cuando un disco falla, reconstruir una matriz RAID 5 puede llevar bastante tiempo.
+
+RAID 6:
+Este formato organizativo de espacio de disco agrupado, también conocido como “RAID con doble paridad”,
+es muy similar a la capa anterior “RAID 5”, pero incluye además un segundo esquema de paridad distribuido en diagonal por los discos de la matriz.
+RAID 6 es uno de los diversos esquemas RAID que funciona colocando los datos en varios discos y permitiendo que las operaciones de E/S (“I/O”) se solapen de forma equilibrada.
+El uso de la paridad adicional permite que la matriz siga funcionando incluso si dos discos fallan al mismo tiempo.
+Sin embargo, el mayor nivel de seguridad tiene un impacto a la baja en el rendimiento de la matriz, que es menor que en un formato de almacenamiento “RAID 5”.
+La matriz de discos redundantes “RAID 6” proporciona una tolerancia a fallos muy alta y puede utilizarse en entornos que requieren
+largos periodos de almacenamiento de datos, como el archivado.
