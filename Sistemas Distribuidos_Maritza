@@ -1,0 +1,24 @@
+Los sistemas distribuidos son un conjunto de computadoras o servidores que trabajan de forma coordinada como si fueran una sola, utilizan recursos para lograr un objetivo compartido común. La finalidad de los sistemas distribuidos es eliminar los cuellos de botella o los puntos de error centrales de un sistema.
+
+Arquitecturas 
+
+La arquitectura RAID (Redundant Array of Independent Disks) es una tecnología que combina múltiples discos duros en una sola unidad lógica para mejorar el rendimiento, la redundancia y la capacidad de almacenamiento.
+RAID 0 (Striping): Divide los datos en bloques y los distribuye entre varios discos.
+RAID 1 (Mirroring): Duplica los datos en dos o más discos.
+RAID 5 (Striping with Parity): Distribuye los datos y la paridad (información de recuperación) entre tres o más discos.
+RAID 6 (Striping with Double Parity): Similar a RAID 5, pero con paridad adicional para mayor redundancia.
+RAID 10 (1+0): Combina RAID 1 y RAID 0; los datos se espejan y luego se distribuyen.
+
+Ventajas y Desventajas 
+
+Ventajas
+Escalabilidad: Permiten añadir más recursos fácilmente para manejar un mayor número de usuarios o datos.
+Tolerancia a fallos: Si un componente falla, otros pueden continuar funcionando, mejorando la disponibilidad del sistema.
+Flexibilidad: Facilitan la integración de nuevas tecnologías y la adaptación a cambios en los requisitos.
+Eficiencia: Pueden distribuir la carga de trabajo entre múltiples máquinas, mejorando el rendimiento.
+
+Desventajas
+Complejidad: La gestión y coordinación de múltiples componentes puede ser complicada.
+Seguridad: Aumenta la superficie de ataque, lo que puede requerir medidas de seguridad adicionales.
+Costos: Implementar y mantener un sistema distribuido puede ser costoso debido a la infraestructura y la administración necesarias.
+Latencia: La comunicación entre componentes distribuidos puede introducir retrasos.
