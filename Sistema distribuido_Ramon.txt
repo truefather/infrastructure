@@ -1,0 +1,14 @@
+Son sistemas cuyos componentes hardware y software, que están en ordenadores conectados en red, se comunican y coordinan sus acciones mediante el paso de mensajes, para el logro de un objetivo. Se establece la comunicación mediante un protocolo prefijado por un esquema "cliente-servidor".
+Los sistemas distribuidos tienen ventajas como que son menos costosos ya que si se necesita aumentar la capacidad, solo se requiere comprar el servidor necesario.
+Se puede distribuir la carga de trabajo.
+Algunas desventajas son:
+El principal problema es el software, es el diseño, implantación y uso del software distribuido, pues presenta numerosos inconvenientes. Los principales interrogantes son los siguientes:
+Las computadoras en un sistema pueden ser de diferentes tipos y ejecutar versiones diferentes de sistemas operativos. Esto significa que se requiere más esfuerzo para gestionar y mantener en funcionamiento el sistema.
+Raid es una tipología de configuración de múltiples discos duros que pueden trabajar de forma coordinada. El término RAID proviene del acrónimo inglés de: Redundant Array of Independent Disks.
+Dentro de RAID se encuentran 2 grupos:
+Espejo de discos (disk mirroring): Sistemas RAID que buscan la redundancia ante un posible fallo de uno de los discos duros.
+Stripping de discos (disk striping): Sistema RAID que no busca la redundancia, sino una alta velocidad de transferencia de datos.
+RAID 0
+(striping de disco): Este nivel implica el proceso de dividir una matriz de datos en bloques individuales y luego distribuirlos a través de múltiples dispositivos de almacenamiento, como unidades de disco duro (“HDD”) o unidades de estado sólido (“SSD”), combinados en un grupo agregado. Los bloques se asignan secuencialmente y contienen cada parte de los datos en una unidad independiente.
+RAID Nivel 1
+La duplicación de discos, también conocida como “RAID 1“, consiste en colocar obligatoriamente los datos en dos o más discos formando una única matriz, con el contenido de las copias sincronizado. Sin embargo, no hay función de striping en esta variante de matriz de almacenamiento. La duplicación de discos es una buena opción para las aplicaciones de alto rendimiento y alta disponibilidad, como las responsables de las transacciones financieras, el envío y la recepción de correos electrónicos y el funcionamiento del sistema operativo. El mirroring funciona bien tanto con discos duros como con unidades de estado sólido.
