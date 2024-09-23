@@ -1,0 +1,50 @@
+SISTEMAS DISTRIBUIDAS
+Se define como sistema distribuido a un conjunto o grupo de equipos que son independientes entre sí y que actúan como un único equipo de forma transparente y que tienen como objetivo la descentralización del procesamiento o el almacenamiento de información.
+La distribución distribuida permite obtener grandes prestaciones con un coste razonablemente bajo. En la actualidad, la mayoría de sistemas informáticos son distribuidos y no dependen de un único nodo o equipo para funcionar.
+
+Las principales características de un sistema distribuido son:
+★Concurrencia. Una arquitectura distribuida permite que sea utilizada por todos los usuarios que interactúan en la red.
+★Modularidad. Esta característica permite que los sistemas distribuidos sean escalables, teniendo capacidad para crecer de forma simple y eficiente.
+★Transparencia. Proporcionando a los usuarios y las aplicaciones una visión de los recursos del sistema como si se tratase de una única máquina o equipo.
+★No depende de los componentes. Un sistema distribuido no depende de los distintos componentes hardware que lo forman, ya que, si alguno falla, los demás continúan con los procesos sin que el sistema se vea interrumpido o sufra pérdidas de datos.
+★Apertura. La arquitectura distribuida permite añadir nuevos servicios que compartan los recursos existentes sin perjudicar los servicios que ya se están ejecutando. Por eso deben estar diseñados sobre protocolos estándar que permitan utilizar hardware y software de distintos fabricantes o desarrolladores.
+★Carencia de reloj global. Las coordinaciones para la transferencia de mensajes entre los diferentes equipos para la resolución de una o varias tareas, no tienen una temporización general, es decir, se encuentra distribuida a los componentes.
+ 
+ARQUITECTURA 
+Es un sistema que se caracteriza por la descentralización del almacenamiento y procesamiento de información. Se compone de un conjunto de equipos de cómputo que, al unirse, mejoran la eficacia de los procesamientos, la flexibilidad, la escalabilidad y los tiempos de respuesta. 
+ 
+RAID 
+(redundant array of independent disks) es una forma de almacenar los mismos datos en diferentes partes de múltiples discos duros para proteger los datos en caso de fallo de una de las unidades. Sin embargo, no todos los tipos RAID proporcionan la redundancia y lo veremos en este post.
+
+COMO FUNCIONA RAID
+RAID funciona al colocar los datos en varios discos y permitir que las operaciones de entrada / salida (E / S) se superpongan de manera equilibrada, lo que mejora el rendimiento. Debido a que el uso de múltiples discos aumenta el tiempo medio entre errores (MTBF), el almacenamiento de datos de forma redundante también aumenta la tolerancia a fallos.
+
+TIPOS DE RAID
+RAID 0 – striping
+RAID 1 – mirroring
+RAID 5 – striping with parity
+RAID 6 – striping with double parity
+RAID 10 – combining mirroring and striping
+
+VENTAJAS DE LA ARQUITECTURA DISTRIBUIDA
+★Incrementa la eficacia:Los sistemas distribuidos permiten afrontar problemas y proyectos que necesitan de procesamientos complejos de forma más eficiente y a un menor coste. El uso de múltiples nodos para procesar una o múltiples tareas supone un mayor rendimiento al optimizar la distribución del mismo en los diferentes sitios de la red.
+★Mayor tolerancia a los errores: Una arquitectura distribuida tiene una mayor tolerancia a los fallos, ya que al caer un nodo la información se encontrará en otros. Se trata de un sistema mucho más robusto que uno centralizado debido a esta tolerancia a los fallos sin que se vean afectados los procesos o los datos.
+Al estar distribuida la carga de trabajo en muchos nodos distintos, ante el fallo de uno de ellos los demás no se verán afectados y el sistema continúa funcionando, lo que permite afirmar que los sistemas distribuidos son más confiables que los centralizados.
+★Proporciona una mayor velocidad: Una arquitectura distribuida se caracteriza por proporcionar una mayor velocidad en el procesamiento. Por ejemplo, si se realiza una consulta a una base de datos, los procedimientos se dividen entre los distintos nodos, obteniendo una respuesta mucho más rápida que si se realiza con un único nodo.
+★Flexibilidad y escalabilidad: Un sistema distribuido puede ser ampliado de forma horizontal en caso de necesidad de incremento de alguna de sus características, como procesamiento (CPU), almacenamiento o memoria RAM. En lugar de aumentar de forma vertical la capacidad de los equipos, el sistema distribuido se aumenta de forma horizontal añadiendo un nuevo nodo. 
+Un sistema distribuido puede añadir recursos para satisfacer las nuevas demandas sobre el sistema.
+
+DESVENTAJAS DE LA ARQUITECTURA DISTRIBUIDA
+★Mayor nivel de complejidad: En comparación con los sistemas centralizados, los distribuidos tienen un mayor nivel de complejidad a la hora de diseñarlos, configurarlos y gestionarlos de forma eficiente.
+★Seguridad: Los sistemas distribuidos conectan muchos nodos a través de la red y son muchos los usuarios que acceden a la misma, lo que lleva aparejado un aumento del riesgo en la integridad y privacidad de los datos y las comunicaciones.
+Precisamente por este motivo es necesario adoptar medidas de seguridad adicionales para este tipo de arquitectura, de modo que se pueda compensar el riesgo de potenciales ataques, o en caso de producirse, mitigar sus efectos.
+★Mayor esfuerzo: La gestión de un sistema distribuido requiere de un mayor esfuerzo por parte de los administradores, ya que el sistema puede incluir máquinas que dispongan de diferentes sistemas operativos o distintas versiones de los mismos. 
+Hacer funcionar toda esta arquitectura de forma eficiente es mucho más complicado que en un sistema único centralizado y requiere del uso de protocolos estándar.
+
+CONCLUSÓN
+Los sistemas distribuidos son muy importantes porque son una forma de organización de varios equipos que trabajan juntos para realizar tareas de manera más eficiente y rápida.
+
+REFERENCIAS 
+Aguilar, Q. (2024) La importancia de una arquitectura distribuida, Cloud Computing y Servicios Gestionados IT. Available at: https://ilimit.com/blog/importancia-arquitectura-distribuida/ (Accessed: 23 September 2024). 
+Arquitecturas distribuidas. (s/f). Upct.es. Recuperado el 23 de septiembre de 2024, de https://ocw.bib.upct.es/pluginfile.php/10333/mod_resource/content/1/Tema_1_-_Intro-_conceptos_basicos.pdf
+MercadoIT. (2018, 18 diciembre). Tipos RAID y sus caracteristicas | MercadoIT. MercadoIT. https://www.mercadoit.com/blog/analisis-opinion-it/tipos-raid-y-sus-caracteristicas/
