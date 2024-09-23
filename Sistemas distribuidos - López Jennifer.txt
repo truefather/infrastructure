@@ -40,7 +40,6 @@ Desventajas
 
 * Es difícil proporcionar una seguridad adecuada en los sistemas distribuidos porque tanto los nodos como las conexiones deben asegurarse.
 
- 
 * Puede ocurrir una sobrecarga en la red si todos los nodos del sistema distribuido intentan enviar datos a la vez.
 
 * La base de datos conectada a los sistemas distribuidos es bastante complicada y difícil de manejar en comparación con un sistema de usuario único.
