@@ -7,3 +7,5 @@ y la Tolerancia a fallos: Si un nodo falla, el sistema puede continuar funcionan
 Y algunas Desventajas de los sistemas distribuidos pueden ser... Seguridad: Al distribuir datos y procesos en múltiples nodos, aumentan los puntos vulnerables que pueden ser atacados 
 o comprometidos, lo que requiere una mayor atención a la seguridad. El Manejo de fallos: Aunque son tolerantes a fallos, la identificación y recuperación ante fallos 
 pueden ser complejas y pueden requerir mecanismos especializados, como algoritmos de consenso o replicación.
+
+hola norman
