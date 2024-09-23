@@ -1,0 +1,48 @@
+Son un conjunto de computadoras conectadas por una red, que tienen sus propias unidades de hardware y software, pero comparten recursos.
+
+     Ventajas
+
+Escalabilidad: Los sistemas distribuidos pueden crecer conforme a sus necesidades y carga de trabajo. 
+
+Disponibilidad: Si una computadora falla, el sistema no se colapsa.
+
+Rendimiento:
+
+Las tareas pueden repartirse entre varios nodos, lo que permite realizar operaciones en paralelo, mejorando la eficiencia.
+
+Flexibilidad:
+
+Los recursos y las capacidades del sistema pueden ajustarse dinámicamente según las necesidades.
+
+
+      Desventajas
+
+Seguridad: La conexión de muchos nodos a través de la red aumenta el riesgo de la integridad y privacidad de los datos y las comunicaciones.
+                      
+Mayor esfuerzo: La gestión de un sistema distribuido requiere de un mayor esfuerzo por parte de los administradores. 
+
+Problemas de Comunicación: Las redes que conectan los nodos pueden tener fallos o retrasos, afectando el rendimiento del sistema.
+
+
+       Arquitecturas de Sistemas Distribuidos
+
+Cliente-Servidor: Un servidor central proporciona recursos o servicios a varios clientes.
+
+Peer-to-Peer (P2P): Todos los nodos (pares) son iguales y actúan como clientes y servidores a la vez.
+
+Arquitectura por Capas (Multicapas): Se divide en múltiples capas (presentación, lógica, datos), donde cada una tiene responsabilidades específicas.
+
+Arquitectura de Microservicios:
+
+Divide una aplicación en pequeños servicios independientes que se comunican entre sí a través de APIs.
+
+Arquitectura de Espacio Compartido:
+
+Varios procesos interactúan y comparten un espacio de memoria común.
+
+
+
+
+
+
+
