@@ -1,0 +1,48 @@
+Sistemas distribuidos
+
+Un sistema distribuido es un conjunto de computadoras independientes que trabajan juntas como si fueran una sola entidad, estos sistemas están diseñados para 
+compartir recursos y coordinar tareas a través de una red.
+
+ La arquitectura de un sistema distribuido es un conjunto de principios, protocolos y algoritmos que permiten a los usuarios compartir recursos en 
+sistemas interconectados y dispersos geográficamente. En otras palabras, se trata de una estructura de software que permite a los diferentes componentes de hardware trabajar juntos como una sola unidad.
+
+ Ventajas
+Escalabilidad: Fácil de expandir añadiendo más nodos.
+Tolerancia a Fallos: Si un nodo falla, otros pueden asumir su carga.
+Flexibilidad: Permite el uso de diferentes tecnologías y plataformas.
+ Desventajas
+Complejidad: Más difícil de gestionar y desarrollar.
+Seguridad: Mayor superficie de ataque.
+Latencia: Retrasos en la comunicación entre nodos.
+
+RAID - Arquitecturas
+
+RAID Nivel 0
+“RAID 0” (striping de disco): Este nivel implica el proceso de dividir una matriz de datos en bloques individuales y luego distribuirlos a través de múltiples dispositivos 
+de almacenamiento, como unidades de disco duro (“HDD”) o unidades de estado sólido (“SSD”), combinados en un grupo agregado. 
+
+RAID Nivel 1
+La duplicación de discos, también conocida como “RAID 1“, consiste en colocar obligatoriamente los datos en dos o más discos formando una única matriz, con el contenido de las 
+copias sincronizado. Sin embargo, no hay función de striping en esta variante de matriz de almacenamiento. 
+
+RAID Nivel 2
+Esta configuración de almacenamiento de datos utiliza la separación de discos, además de que se asignan algunos discos individuales que almacenan información de comprobación y 
+corrección de errores (“ECC“). 
+
+RAID Nivel 3
+Este formato de organización de matrices de discos unificadas utiliza el striping y asigna un disco, del conjunto de unidades disponibles, para almacenar la información de paridad, que se 
+encarga de comprobar la integridad determinando si los datos se han perdido o sobrescrito cuando se trasladan directamente de una ubicación de almacenamiento a otra o cuando se transfieren 
+entre ordenadores.
+
+RAID Nivel 4
+Esta configuración RAID utiliza una unidad de paridad dedicada y un striping a nivel de bloque entre varias unidades, lo que permite a los usuarios realizar operaciones de lectura y 
+escritura desde cualquier unidad. 
+
+RAID Nivel 5
+La configuración de la matriz redundante de discos independientes en este formato se basa en el principio de striping a nivel de bloques de paridad. Los datos y la información de paridad se 
+distribuyen uniformemente entre todas las unidades, lo que supone reducir la vulnerabilidad crítica de una unidad de almacenamiento individual en una unión organizada y permite que una matriz RAID 5 
+funcione incluso en caso de fallo de una sola unidad, e incluso que se recuperen mediante la intercalación de datos perdidos del dispositivo problemático.
+
+RAID Nivel 6
+Este formato organizativo de espacio de disco agrupado, también conocido como “RAID con doble paridad”, es muy similar a la capa anterior “RAID 5”, pero incluye además un segundo esquema de paridad 
+distribuido en diagonal por los discos de la matriz. 
