@@ -1,14 +1,19 @@
-Los sistemas distribuidos son partes que conforman el software que coordinan las acciones de varias computadoras, esta se logra a través de intercambiar mensajes, es decir, con trozos de datos que transmiten información. Estos sistemas requieren de componentes concurrentes, una red de comunicación y un mecanismo de sincronización. Permiten compartir recursos, incluyendo el software, por los sistemas conectados a una red. Por tanto, el sistema se basa en una red que conecta las computadoras y maneja el enrutamiento de los mensajes.
+Los sistemas distribuidos son partes que conforman el software que coordinan las acciones de varias computadoras, esta se logra a través de intercambiar mensajes,
+es decir, con trozos de datos que transmiten información. Estos sistemas requieren de componentes concurrentes, una red de comunicación y un mecanismo de 
+sincronización. Permiten compartir recursos, incluyendo el software, por los sistemas conectados a una red. Por tanto, el sistema se basa en una red que conecta 
+las computadoras y maneja el enrutamiento de los mensajes.
 
 Arquitecturas
 
 Cliente-servidor
 
-Un servidor que es una computadora generalmente con altas capacidades de procesamiento atiende peticiones de computadoras comunes llamadas clientes, tales como impresión, archivos, etc.
+Un servidor que es una computadora generalmente con altas capacidades de procesamiento atiende peticiones de computadoras comunes llamadas clientes, tales como 
+impresión, archivos, etc.
 
 Peer-to-peer
 
-Una red que permite a todas las personas que están en ella, acceder a los archivos de los demás y enviar correos electrónicos, pero ninguna de ellas brinda algún servicio o servicios en específico.
+Una red que permite a todas las personas que están en ella, acceder a los archivos de los demás y enviar correos electrónicos, pero ninguna de ellas brinda algún 
+servicio o servicios en específico.
 
 Varios niveles
 
@@ -16,7 +21,8 @@ Varios niveles
 
 Grupo de procesadores
 
-Un sistema operativo podría iniciar automáticamente procesos en computadoras inactivas e incluso migrar procesos a sistemas con una mayor cantidad de ciclos disponibles de CPU. En otros casos, un usuario puede iniciar o mover procesos manualmente en los sistemas disponibles.
+Un sistema operativo podría iniciar automáticamente procesos en computadoras inactivas e incluso migrar procesos a sistemas con una mayor cantidad de ciclos 
+disponibles de CPU. En otros casos, un usuario puede iniciar o mover procesos manualmente en los sistemas disponibles.
 
 Ventajas
 
@@ -51,16 +57,21 @@ RAID 6: Excelente redundancia de datos y capacidad de disco utilizable del 50% a
 
 RAID 10: Excelente redundancia de datos y capacidad del disco utilizable del 50%.
 
-Los arreglos RAID están muy presentes en los sistemas distribuidos ya que estos pueden ser implementados a nivel software y hardware y pueden ser usados para DBMS, algunos para respaldos, a replicar, guardar más rápido, todo esto dependiendo para que los vayamos a utilizar, se puede elegir uno que se adecue a las necesidades de cada quien.
+Los arreglos RAID están muy presentes en los sistemas distribuidos ya que estos pueden ser implementados a nivel software y hardware y pueden ser usados para DBMS, 
+algunos para respaldos, a replicar, guardar más rápido, todo esto dependiendo para que los vayamos a utilizar, se puede elegir uno que se adecue a las necesidades 
+de cada quien.
 
 
 
 Referencias
 
-﻿Corvo, H. S. (2020, March 1). Sistemas distribuidos: características, arquitectura, tipos, objetivos, aplicaciones. Lifeder. https://www.lifeder.com/sistemas-distribuidos/
+﻿Corvo, H. S. (2020, March 1). Sistemas distribuidos: características, arquitectura, tipos, objetivos, aplicaciones. Lifeder. https://www.lifeder.com/sistemas-
+distribuidos/
 
-Dell. (2021, September 20). Servidores Dell: ¿Qué son los niveles de RAID y sus especificaciones? Dell Venezuela. https://www.dell.com/support/kbdoc/es-ve/000128635/servidores-dell-qu%C3%A9-son-los-niveles-de-raid-y-sus-especificaciones
+Dell. (2021, September 20). Servidores Dell: ¿Qué son los niveles de RAID y sus especificaciones? Dell Venezuela. https://www.dell.com/support/kbdoc/es-
+ve/000128635/servidores-dell-qu%C3%A9-son-los-niveles-de-raid-y-sus-especificaciones
 
-Howard. (n.d.). Qué es RAID: tipos, ventajas y cuál elegir para tu empresa | Comunidad FS. Knowledge. https://community.fs.com/es/article/what-is-raid-types-advantages-and-which-one-to-choose-for-your-company.html
+Howard. (n.d.). Qué es RAID: tipos, ventajas y cuál elegir para tu empresa | Comunidad FS. Knowledge. https://community.fs.com/es/article/what-is-raid-types-
+advantages-and-which-one-to-choose-for-your-company.html
 
 Arreglos de Discos. Qué son y Dónde utilizarlos. (n.d.). SG Buzz. https://sg.com.mx/revista/06/arreglos-discos-que-son-y-donde-utilizarlos
