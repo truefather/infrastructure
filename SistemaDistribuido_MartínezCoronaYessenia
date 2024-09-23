@@ -1,0 +1,55 @@
+¿Qué es un sistema distribuido?
+Un sistema distribuido es un conjunto de programas informáticos que utilizan recursos computacionales en varios nodos de cálculo distintos para lograr un objetivo compartido común.
+
+¿Cómo funciona un sistema distribuido?
+Cualquier sistema distribuido es un conjunto de componentes que permiten almacenar, procesar y administrar recursos.
+Se dice que tienen una capacidad de almacenamiento y de procesamiento –virtualmente—infinita porque constantemente se pueden agregar nuevos servidores.
+
+Hay dos formas de escalar:
+Vertical: en caso que el servidor necesite más capacidad, se le agrega más memoria, más procesadores o también se puede cambiar el servidor por uno más potente.
+Horizontal: en este caso, lo que hacemos es crear nuevos clusters (que son conjuntos de servidores más pequeños), 
+se trata de agregar un servidor al lado del otro para que trabajen de forma coordinada como si fueran una única máquina.
+
+¿Cómo funciona RAID?
+Funciona al colocar los datos en varios discos y permitir que las operaciones de entrada / salida (E / S) se superpongan de manera equilibrada,
+lo que mejora el rendimiento. Debido a que el uso de múltiples discos aumenta el tiempo medio entre errores (MTBF),
+el almacenamiento de datos de forma redundante también aumenta la tolerancia a fallos.
+
+Tipos RAID
+RAID 0: esta configuración tiene división, pero no redundancia de datos. 
+Ofrece el mejor rendimiento, pero sin tolerancia a fallos.
+
+RAID 1: también conocido como duplicación de disco, 
+esta configuración consta de al menos dos unidades que duplican el almacenamiento de datos.
+
+RAID 5: este nivel se basa en la segmentación a nivel de bloque con paridad. 
+La información de paridad se divide en cada unidad, lo que permite que la matriz funcione incluso si falla una unidad.
+
+RAID 6: esta técnica es similar a RAID 5, pero incluye un segundo esquema de paridad que se distribuye a través de las unidades en la matriz.
+El uso de paridad adicional permite que la matriz continúe funcionando incluso si dos discos fallan simultáneamente. 
+Sin embargo, esta protección adicional tiene un coste.
+
+RAID 10 (RAID 1 + 0): Combinando RAID 1 y RAID 0, este nivel a menudo se denomina RAID 10, 
+que ofrece un mayor rendimiento que RAID 1, pero por un coste mayor. En RAID 1 + 0, los datos se duplican y los espejos se dividen.
+
+Ventajas
+Incrementa la eficacia. Los sistemas distribuidos permiten afrontar problemas y proyectos que necesitan de procesamientos complejos de forma más eficiente y a un menor coste.
+
+Mayor tolerancia a los errores. Una arquitectura distribuida tiene una mayor tolerancia a los fallos, ya que al caer un nodo la información se encontrará en otros.
+
+Proporciona una mayor velocidad. Una arquitectura distribuida se caracteriza por proporcionar una mayor velocidad en el procesamiento.
+
+Flexibilidad y escalabilidad. Un sistema distribuido puede ser ampliado de forma horizontal en caso de necesidad de incremento de alguna de sus características,
+como procesamiento (CPU),almacenamiento o memoria RAM.
+
+Desventajas
+A pesar de las enormes ventajas de los sistemas distribuidos, hay algunos inconvenientes relacionados con este tipo de arquitecturas como pueden ser:
+
+Mayor nivel de complejidad. En comparación con los sistemas centralizados, los distribuidos tienen un mayor nivel de complejidad a la hora de diseñarlos, 
+configurarlos y gestionarlos de forma eficiente.
+
+Seguridad. Los sistemas distribuidos conectan muchos nodos a través de la red y son muchos los usuarios que acceden a la misma, 
+lo que lleva aparejado un aumento del riesgo en la integridad y privacidad de los datos y las comunicaciones.
+
+Mayor esfuerzo. La gestión de un sistema distribuido requiere de un mayor esfuerzo por parte de los administradores,
+ya que el sistema puede incluir máquinas que dispongan de diferentes sistemas operativos o distintas versiones de los mismos.
