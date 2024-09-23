@@ -1,8 +1,24 @@
-es un grupo de equipos conectados entre si realizando una misma funcion que actuan como una solo dispositivo, las ventajas de una buena arquitectura mayor eficiencia para enfrentar proyectos con mas complejos eso a su ves genera un costo menor alargo plazo , mayor velocidad en el prosesamiento, desventajas seguridad son muchos usuarios a través de la red lo que lleva aparejado un aumento del riesgo en la integridad y privacidad de los datos y las comunicaciones ,La gestión de un sistema distribuido requiere de un mayor esfuerzo 
-RAID es un método de combinación de varios discos duros para formar una unidad lógica única en la que se almacenan los datos de forma redundante. Ofrece mayor tolerancia a fallos y más altos niveles de rendimiento que un sólo disco duro o un grupo de discos duros independientes
-RAID 0. Este arreglo es conocido como distribuido (striping), porque utiliza un sistema que utiliza a los discos como uno solo, teniendo un conjunto de cabezas independientes para su uso. La información es dividida en bloques de datos que se distribuyen en todos los discos del arreglo.
-RAID1. Este tipo de arreglo se conoce como Espejeo (Mirroring), porque su conjunto de discos los utiliza como espejos. Ofrece el nivel de protección más alto, pues uno tiene copia idéntica de la información de cada disco.
-RAID5. Este tipo de arreglo se denomina también como distribuido con paridad. Este tipo de arreglos distribuye la información en todo el conjunto de discos.elabora un bit de paridad con el cual es posible reconstruir la información del arreglo en caso de la pérdida de alguno de los discos. La información y los bits de paridad son distribuidos en todos los discos, garantizando que siempre se encontrarán en discos distintos
-Raid10 (0+1). Este tipo de arreglo es una mezcla del arreglo distribuido y espejeo. La información se distribuye en un conjunto de discos como un RAIDø y, a su vez, este conjunto de discos es espejeado a otro conjunto de discos como un RAID1. RAID10 provee el nivel de protección y desempeño más alto para escritura y lectura que cualquier otro arreglo, debido a que contiene los beneficios de los arreglos distribuidos y espejo. Su único problema es el costo de implementación, al tener que usar siempre el doble discos.
+es un grupo de equipos conectados entre si realizando una misma funcion que actuan como una solo dispositivo, las ventajas de una buena arquitectura mayor 
+eficiencia para enfrentar proyectos con mas complejos eso a su ves genera un costo menor alargo plazo , mayor velocidad en el prosesamiento, desventajas 
+seguridad son muchos usuarios a través de la red lo que lleva aparejado un aumento del riesgo en la integridad y privacidad de los datos y las comunicaciones,
+La gestión de un sistema distribuido requiere de un mayor esfuerzo.
+
+RAID es un método de combinación de varios discos duros para formar una unidad lógica única en la que se almacenan los datos de forma redundante. 
+Ofrece mayor tolerancia a fallos y más altos niveles de rendimiento que un sólo disco duro o un grupo de discos duros independientes
+
+RAID 0. Este arreglo es conocido como distribuido (striping), porque utiliza un sistema que utiliza a los discos como uno solo, teniendo un conjunto de 
+cabezas independientes para su uso. La información es dividida en bloques de datos que se distribuyen en todos los discos del arreglo.
+
+RAID1. Este tipo de arreglo se conoce como Espejeo (Mirroring), porque su conjunto de discos los utiliza como espejos. Ofrece el nivel de protección más alto, 
+pues uno tiene copia idéntica de la información de cada disco.
+
+RAID5. Este tipo de arreglo se denomina también como distribuido con paridad. Este tipo de arreglos distribuye la información en todo el conjunto de 
+discos.elabora un bit de paridad con el cual es posible reconstruir la información del arreglo en caso de la pérdida de alguno de los discos.
+La información y los bits de paridad son distribuidos en todos los discos, garantizando que siempre se encontrarán en discos distintos
+
+Raid10 (0+1). Este tipo de arreglo es una mezcla del arreglo distribuido y espejeo. La información se distribuye en un conjunto de discos como un RAIDø y, 
+a su vez, este conjunto de discos es espejeado a otro conjunto de discos como un RAID1. RAID10 provee el nivel de protección y desempeño más alto para escritura
+y lectura que cualquier otro arreglo, debido a que contiene los beneficios de los arreglos distribuidos y espejo. Su único problema es el costo de implementación,
+al tener que usar siempre el doble discos.
 
 
