@@ -1,0 +1,96 @@
+¿Qué son los sistemas distribuidos? 
+Los sistemas distribuidos son un conjunto de computadoras o servidores que
+trabajan de manera coordinada como si fueran una sola unidad. Son esenciales en 
+data & analytics para escalar y almacenar grandes volúmenes de datos de manera 
+costo-efectiva.
+
+¿Cómo funciona un sistema distribuido? 
+Un sistema distribuido consta de componentes que permiten almacenar, procesar y 
+administrar recursos. Su capacidad de almacenamiento y procesamiento es 
+prácticamente infinita, ya que se pueden agregar nuevos servidores continuamente.
+
+Formas de escalar:
+1.	Vertical: Aumentar la capacidad de un servidor añadiendo más memoria,
+    procesadores, o reemplazándolo por uno más potente.
+
+2.	Horizontal: Agregar nuevos servidores en paralelo para que trabajen de 
+    forma coordinada como una única máquina.
+
+Arquitecturas de Sistemas Distribuidos:
+1.	Cliente-Servidor: Los clientes solicitan servicios y los servidores los proporcionan.
+    Ventajas: Escalabilidad, administración centralizada de recursos.
+  	Desventajas: Punto único de fallo (el servidor), dependencia de la red.
+
+2.	Arquitectura Peer-to-Peer (P2P): Todos los nodos tienen capacidad para 
+    actuar tanto como clientes como servidores.
+    Ventajas: Escalabilidad, resistencia a fallos (no hay un solo punto de fallo central).
+    Desventajas: Gestión de recursos más compleja, seguridad y control de acceso pueden
+    ser desafiantes.
+
+3.	Arquitectura de Middleware: Utiliza capas de software que se interponen entre los sistemas
+    distribuidos para simplificar la programación y la gestión.
+    Ventajas: Abstracción de la complejidad de red, facilita la integración de sistemas 
+    heterogéneos.
+    Desventajas: Overhead adicional de software, posibles problemas de rendimiento.
+
+VENTAJAS Y DESVENTAJAS DE LOS SISTEMAS DISTRIBUIDOS
+Ventajas 
+~ Una de las ventajas de los sistemas distribuidos es la economía, pues es mucho más barato,
+  añadir servidores y clientes cuando se requiere aumentar la potencia de procesamiento.
+~ El trabajo en conjunto. Por ejemplo: en una fábrica de ensamblado, los robots tienen sus CPUs
+  diferentes y realizan acciones en conjunto, dirigidos por un sistema distribuido.
+~ Tienen una mayor confiabilidad. Al estar distribuida la carga de trabajo en muchas máquinas
+  la falla de una de ellas no afecta a las demás, el sistema sobrevive como un todo.
+~ Capacidad de crecimiento incrementa. Se puede añadir procesadores al sistema,
+  incrementando su potencia en forma gradual según sus necesidades.
+
+Desventajas 
+~ El principal problema es el software, es el diseño, implantación y uso del software 
+  distribuido, pues presenta numerosos inconvenientes.
+~ Las computadoras en un sistema pueden ser de diferentes tipos y ejecutar versiones diferentes
+  de sistemas operativos. Esto significa que se requiere mas esfuerzo para gestionar y mantener 
+  en funcionamiento el sistema.
+~ Puede accederse al sistema desde varias computadoras diferentes, y el trafico en la red, puede
+  estar sujeto a escuchas indeseadas (esto hace mas difícil mantener la integridad de los datos 
+  en el sistema y que los servicios no se degraden por ataques).
+
+RAID 0 (Striping)
+•	Funcionamiento: Los datos se dividen en bloques y se distribuyen entre varios discos.  
+  Esto permite que las operaciones de lectura y escritura se realicen en paralelo, mejorando 
+  el rendimiento.
+•	Ventajas: Aumento significativo del rendimiento.
+•	Desventajas: No ofrece redundancia. Si un disco falla, todos los datos se pierden.
+
+RAID 1 (Mirroring)
+•	Funcionamiento: Los datos se duplican (espejean) en dos discos o más. Esto significa que 
+  cada vez que se escribe un dato, se guarda en todos los discos.
+•	Ventajas: Redundancia total; si uno de los discos falla, los datos están intactos en el 
+  otro disco.
+•	Desventajas: No aumenta la capacidad de almacenamiento, ya que cada disco es una copia del
+  otro. Además, no mejora el rendimiento de escritura, aunque puede mejorar el de lectura.
+
+RAID 5 (Striping con paridad)
+•	Funcionamiento: Los datos y la información de paridad (que se usa para la reconstrucción de
+  datos en caso de fallo) se distribuyen entre varios discos. La paridad se utiliza para 
+  reconstruir los datos si uno de los discos falla.
+•	Ventajas: Ofrece un buen equilibrio entre rendimiento, capacidad y redundancia. 
+  Puede continuar operando incluso si uno de los discos falla.
+•	Desventajas: Si un disco falla, el sistema puede continuar funcionando, pero el rendimiento
+  se reduce hasta que el disco fallido sea reemplazado y los datos reconstruidos.
+
+RAID 6 (Striping con doble paridad)
+•	Funcionamiento: Similar a RAID 5, pero con la diferencia de que almacena dos bloques de 
+  paridad en lugar de uno. Esto permite que RAID 6 tolere la falla de hasta dos discos al 
+  mismo tiempo.
+•	Ventajas: Mayor tolerancia a fallos que RAID 5, ya que puede perder dos discos sin perder
+  datos.
+•	Desventajas: Es más lento en escritura debido a la necesidad de calcular y almacenar dos 
+  bloques de paridad.
+
+RAID 10 (RAID 1+0 o RAID 0+1)
+•	Funcionamiento: Combina las ventajas de RAID 0 (striping) y RAID 1 (mirroring). 
+  Los datos se espejean y luego se dividen en bloques distribuidos en varios discos.
+•	Ventajas: Ofrece tanto redundancia (por el mirroring) como un alto rendimiento (por el 
+  striping).
+•	Desventajas: Requiere al menos 4 discos y es costoso en términos de almacenamiento, 
+  ya que la mitad del espacio se utiliza para la duplicación de datos.
