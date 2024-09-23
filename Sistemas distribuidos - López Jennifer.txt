@@ -1,0 +1,66 @@
+Los sistemas distribuidos son partes que conforman el software que coordinan las acciones de varias computadoras, esta se logra a través de intercambiar mensajes, es decir, con trozos de datos que transmiten información. Estos sistemas requieren de componentes concurrentes, una red de comunicación y un mecanismo de sincronización. Permiten compartir recursos, incluyendo el software, por los sistemas conectados a una red. Por tanto, el sistema se basa en una red que conecta las computadoras y maneja el enrutamiento de los mensajes.
+
+Arquitecturas
+
+Cliente-servidor
+
+Un servidor que es una computadora generalmente con altas capacidades de procesamiento atiende peticiones de computadoras comunes llamadas clientes, tales como impresión, archivos, etc.
+
+Peer-to-peer
+
+Una red que permite a todas las personas que están en ella, acceder a los archivos de los demás y enviar correos electrónicos, pero ninguna de ellas brinda algún servicio o servicios en específico.
+
+Varios niveles
+
+﻿Un servidor al realizar sus tareas puede contactar a otro servidor de diferente tipo. La arquitectura cliente-servidor es una arquitectura de dos niveles.
+
+Grupo de procesadores
+
+Un sistema operativo podría iniciar automáticamente procesos en computadoras inactivas e incluso migrar procesos a sistemas con una mayor cantidad de ciclos disponibles de CPU. En otros casos, un usuario puede iniciar o mover procesos manualmente en los sistemas disponibles.
+
+Ventajas
+
+* Capacidad de agregar fácilmente más nodos al sistema distribuido, es decir, se puede escalar según sea necesario.
+
+* Todos los nodos en el sistema distribuido están conectados entre sí. Por tanto, cada uno de los nodos puede compartir datos fácilmente con los otros nodos.
+
+* Recursos como las impresoras se pueden compartir con múltiples nodos en lugar de restringirse a uno solo.
+
+* La falla de un nodo no conduce a la falla de todo el sistema distribuido. Los otros nodos aún se pueden comunicar entre sí.
+
+Desventajas
+
+* Pueden perderse algunos mensajes y datos en la red al pasar de un nodo a otro.
+
+* Es difícil proporcionar una seguridad adecuada en los sistemas distribuidos porque tanto los nodos como las conexiones deben asegurarse.
+
+ 
+* Puede ocurrir una sobrecarga en la red si todos los nodos del sistema distribuido intentan enviar datos a la vez.
+
+* La base de datos conectada a los sistemas distribuidos es bastante complicada y difícil de manejar en comparación con un sistema de usuario único.
+
+RAID
+
+Existen varios arreglos RAID, pero los más utilizados son:
+
+RAID 0: Ninguna redundancia de datos y capacidad del disco utilizable del 100%.
+
+RAID 5: Muy buena redundancia de datos y capacidad de disco utilizable del 67% al 94%.
+
+RAID 6: Excelente redundancia de datos y capacidad de disco utilizable del 50% al 89%.
+
+RAID 10: Excelente redundancia de datos y capacidad del disco utilizable del 50%.
+
+Los arreglos RAID están muy presentes en los sistemas distribuidos ya que estos pueden ser implementados a nivel software y hardware y pueden ser usados para DBMS, algunos para respaldos, a replicar, guardar más rápido, todo esto dependiendo para que los vayamos a utilizar, se puede elegir uno que se adecue a las necesidades de cada quien.
+
+
+
+Referencias
+
+﻿Corvo, H. S. (2020, March 1). Sistemas distribuidos: características, arquitectura, tipos, objetivos, aplicaciones. Lifeder. https://www.lifeder.com/sistemas-distribuidos/
+
+Dell. (2021, September 20). Servidores Dell: ¿Qué son los niveles de RAID y sus especificaciones? Dell Venezuela. https://www.dell.com/support/kbdoc/es-ve/000128635/servidores-dell-qu%C3%A9-son-los-niveles-de-raid-y-sus-especificaciones
+
+Howard. (n.d.). Qué es RAID: tipos, ventajas y cuál elegir para tu empresa | Comunidad FS. Knowledge. https://community.fs.com/es/article/what-is-raid-types-advantages-and-which-one-to-choose-for-your-company.html
+
+Arreglos de Discos. Qué son y Dónde utilizarlos. (n.d.). SG Buzz. https://sg.com.mx/revista/06/arreglos-discos-que-son-y-donde-utilizarlos
