@@ -13,3 +13,5 @@ Coordinación: Mantener la consistencia de datos y garantizar la coordinación e
 Fallas de red: Los sistemas distribuidos dependen de la conectividad entre nodos. Si hay problemas de red, la comunicación puede verse interrumpida, afectando el rendimiento o disponibilidad.
 Costo de comunicación: En algunos casos, la sobrecarga de la comunicación entre nodos puede ser significativa, lo que disminuye las ventajas de paralelización.
 Depuración y monitoreo: Identificar y resolver problemas en un sistema distribuido es más complicado que en un sistema centralizado, debido a la naturaleza descentralizada de los errores o fallos.
+
+SE REQUIERE ENTREGAR LAS ACTIVIDADES EN TIEMPO
