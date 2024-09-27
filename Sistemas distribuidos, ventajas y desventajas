@@ -1,0 +1,15 @@
+Un sistema distribuido es un conjunto de computadoras independientes que parecen ser un único sistema cohesivo desde la perspectiva del usuario o del software que lo utiliza. Los nodos o máquinas que forman parte de un sistema distribuido están conectados por una red y colaboran entre sí para lograr un objetivo común, compartiendo recursos como datos, aplicaciones y servicios.
+Ventajas 
+Tolerancia a fallos: Si un nodo o componente falla, el sistema completo puede seguir funcionando, ya que otras partes del sistema pueden compensar el fallo.
+Escalabilidad: Se pueden agregar más nodos o recursos al sistema para mejorar el rendimiento o manejar una mayor carga de trabajo.
+Distribución geográfica: Permiten que los recursos y servicios estén disponibles en diferentes ubicaciones, lo que reduce la latencia y mejora el acceso global.
+Mayor rendimiento: Al dividir las tareas entre múltiples nodos, se pueden procesar más operaciones en paralelo, lo que mejora el tiempo de respuesta y el rendimiento general.
+Compartición de recursos: Facilitan el acceso a recursos compartidos, como archivos, impresoras y bases de datos, desde diferentes ubicaciones o máquinas.
+Flexibilidad: Se pueden diseñar para soportar diferentes tipos de plataformas, hardware y redes, lo que los hace adaptables a diversas necesidades.
+Desventajas 
+Complejidad: Son más difíciles de diseñar, implementar y mantener debido a la necesidad de gestionar la comunicación y la sincronización entre múltiples nodos.
+Seguridad: La distribución de datos y servicios en múltiples ubicaciones aumenta la superficie de ataque y puede complicar la seguridad.
+Coordinación: Mantener la consistencia de datos y garantizar la coordinación entre nodos puede ser complicado, especialmente en situaciones de concurrencia o actualizaciones simultáneas.
+Fallas de red: Los sistemas distribuidos dependen de la conectividad entre nodos. Si hay problemas de red, la comunicación puede verse interrumpida, afectando el rendimiento o disponibilidad.
+Costo de comunicación: En algunos casos, la sobrecarga de la comunicación entre nodos puede ser significativa, lo que disminuye las ventajas de paralelización.
+Depuración y monitoreo: Identificar y resolver problemas en un sistema distribuido es más complicado que en un sistema centralizado, debido a la naturaleza descentralizada de los errores o fallos.
